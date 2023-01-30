@@ -8,7 +8,7 @@ import { PricingComponent } from './secure/pricing/pricing.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'heroes', component: HomeComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'over', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'fotos', component: PhotosComponent },

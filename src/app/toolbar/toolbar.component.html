@@ -1,9 +1,36 @@
-<mat-toolbar>
-    <a routerLink="/over">Over</a>
-    <a routerLink="/fotos">Foto's</a>
-    <span>The Wedding Flashers</span>
-    <a routerLink="/prijzen">Prijzen</a>
-    <a routerLink="/contact">Contact</a>
-    <span class="example-spacer"></span>
+<div>
+  <mat-toolbar  >
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <a mat-button class="companyName" routerLink="/">
+    <span routerLink="/">The Wedding Flashers</span>
+  </a>
+  <span class="topbar-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+
+    <a mat-button routerLink="/over">Over</a>
+    <a mat-button routerLink="/fotos">Foto's</a>
+    <a mat-button routerLink="/prijzen">Prijzen</a>
+    <a mat-button routerLink="/contact">Contact</a>
+  </div>
+
   </mat-toolbar>
+  <mat-sidenav-container fxFlexFill class="sidenav-container">
   
+    <mat-sidenav color="primary" #sidenav mode="over"  opened="false" fxHide.gt-sm="true">
+      <div fxLayout="column">
+        <a mat-button routerLink="/over">Over Ons</a>
+        <a mat-button routerLink="/fotos">Foto's</a>
+        <a mat-button routerLink="/prijzen">Prijzen</a>
+        <a mat-button routerLink="/contact">Contact</a>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+<router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
