@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from "@angular/material/icon";
+import { MatGridListModule } from '@angular/material/grid-list'; 
+
 import { MatButtonModule } from "@angular/material/button";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -17,7 +19,8 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './secure/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FlexLayoutModule } from '@angular/flex-layout';
- 
+import { MatCardModule } from '@angular/material/card';
+import { VideoComponent } from './secure/video/video.component'; 
 
 @NgModule({
   declarations: [
@@ -27,7 +30,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     PhotosComponent,
     PricingComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSidenavModule,
     RouterModule,
     NgbModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

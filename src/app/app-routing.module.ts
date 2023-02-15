@@ -4,6 +4,7 @@ import { HomeComponent } from './secure/home/home.component';
 import { AboutComponent } from './secure/about/about.component';
 import { ContactComponent } from './secure/contact/contact.component';
 import { PhotosComponent } from './secure/photos/photos.component';
+import { VideoComponent } from './secure/video/video.component';
 import { PricingComponent } from './secure/pricing/pricing.component';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'over', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'fotos', component: PhotosComponent },
+  { path: 'video', component: VideoComponent },
   { path: 'prijzen', component: PricingComponent },
 ];
 
@@ -19,7 +21,7 @@ const routes: Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, { useHash: true})
   ],
   exports: [RouterModule]
 })
