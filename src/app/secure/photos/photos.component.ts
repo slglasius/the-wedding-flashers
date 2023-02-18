@@ -55,14 +55,14 @@ export const PHOTOS: Photos[] = [
   { id: 51, url: '../../../assets/img/general/51.jpg' },
   { id: 52, url: '../../../assets/img/general/52.jpg' },  
   { id: 53, url: '../../../assets/img/general/53.jpg' },
-  { id: 54, url: '../../../assets/img/general/54.jpg' },
-  { id: 55, url: '../../../assets/img/general/55.jpg' },
-  { id: 56, url: '../../../assets/img/general/56.jpg' },
-  { id: 57, url: '../../../assets/img/general/57.jpg' },
-  { id: 58, url: '../../../assets/img/general/58.jpg' },
-  { id: 59, url: '../../../assets/img/general/59.jpg' },
-  { id: 60, url: '../../../assets/img/general/60.jpg' },
-  { id: 61, url: '../../../assets/img/general/61.jpg' },
+  // { id: 54, url: '../../../assets/img/general/54.jpg' },
+  // { id: 55, url: '../../../assets/img/general/55.jpg' },
+  // { id: 56, url: '../../../assets/img/general/56.jpg' },
+  // { id: 57, url: '../../../assets/img/general/57.jpg' },
+  // { id: 58, url: '../../../assets/img/general/58.jpg' },
+  // { id: 59, url: '../../../assets/img/general/59.jpg' },
+  // { id: 60, url: '../../../assets/img/general/60.jpg' },
+  // { id: 61, url: '../../../assets/img/general/61.jpg' },
 
 ];
 

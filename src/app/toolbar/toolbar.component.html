@@ -1,33 +1,34 @@
 <div>
   <mat-toolbar>
-    <div fxShow="true" fxHide.gt-md="true">
-      <button mat-icon-button (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-    </div>
+
     <a mat-button class="companyName" routerLink="/">
       <span routerLink="/">The Wedding Flashers</span>
     </a>
     <span class="topbar-spacer"></span>
     <div fxShow="true" fxHide.lt-lg="true">
 
-      <a mat-button routerLink="/over">Over</a>
-      <a mat-button routerLink="/fotos">Foto</a>
-      <a mat-button routerLink="/video">Video</a>
-      <a mat-button routerLink="/prijzen">Prijzen</a>
-      <a mat-button routerLink="/contact">Contact</a>
+      <a class="topbar-links" mat-button routerLink="/over" routerLinkActive="active">Over</a>
+      <a class="topbar-links" mat-button routerLink="/fotos" routerLinkActive="active">Foto</a>
+      <a class="topbar-links" mat-button routerLink="/video" routerLinkActive="active">Video</a>
+      <a class="topbar-links" mat-button routerLink="/prijzen" routerLinkActive="active">Prijzen</a>
+      <a class="topbar-links" mat-button routerLink="/contact" routerLinkActive="active">Contact</a>
+    </div>
+    <div fxShow="true" fxHide.gt-md="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon class="icon-display">menu</mat-icon>
+      </button>
     </div>
 
   </mat-toolbar>
   <mat-sidenav-container fxFlexFill class="sidenav-container">
 
-    <mat-sidenav color="primary" #sidenav mode="over" opened="false" fxHide.gt-lg="true">
+    <mat-sidenav color="primary" #sidenav mode="over" opened="false"  position="end" fxHide.gt-lg="true">
       <div  class="overflow-hidden" fxLayout="column">
-        <a mat-button routerLink="/over">Over Ons</a>
-        <a mat-button routerLink="/fotos">Foto's</a>
-        <a mat-button routerLink="/video">Video</a>
-        <a mat-button routerLink="/prijzen">Prijzen</a>
-        <a mat-button routerLink="/contact">Contact</a>
+        <a class="line" mat-button routerLink="/over" routerLinkActive="active">Over Ons</a>
+        <a class="line" mat-button routerLink="/fotos" routerLinkActive="active">Foto's</a>
+        <a class="line" mat-button routerLink="/video" routerLinkActive="active">Video</a>
+        <a class="line" mat-button routerLink="/prijzen" routerLinkActive="active">Prijzen</a>
+        <a class="line" mat-button routerLink="/contact" routerLinkActive="active">Contact</a>
       </div>
     </mat-sidenav>
     <mat-sidenav-content >

@@ -1,56 +1,98 @@
 <div class="content">
-    <div class="d-flex justify-content-center" fxLayout="row wrap" fxLayoutGap="16px">
-        <div fxFlex="25%" fxFlex.sm="90%">
+    <div class="d-flex justify-content-center" fxLayout="row wrap" fxLayoutGap.md="0%" fxLayoutGap="2.5%">
+        <div fxFlex="30%" fxFlex.md="90%">
             <mat-card class="p-3 mt-5">
                 <mat-card-header>
-                    <div mat-card-avatar class="header-image"></div>
-                    <mat-card-title>Zilver</mat-card-title>
+                    <div mat-card-avatar class="header-image-zilver"></div>
+                    <mat-card-title><h1>Zilver</h1></mat-card-title>
                 </mat-card-header>
-                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-                    alt="Photo of a Shiba Inu">
                 <mat-card-content class="text-start">
                     <ul>
                         <li>2 shooters</li>
                         <li>6 uur</li>
                         <li>minimaal 250 foto's</li>
                         <li>1200 EUR</li>
-                      </ul> 
+                    </ul>
+
+                    <mat-accordion>
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title class="h5">
+                                    Extra video opties:
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <ul class="h6">
+                                <li>250 EUR video gastenboek</li>
+                                <li>300 EUR full ceremonie</li>
+                                <li>250 EUR korte wedding film (max 2 min) experimentele fase</li>
+                            </ul>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
                 </mat-card-content>
             </mat-card>
         </div>
-        <div fxFlex="25%" fxFlex.sm="90%">
+        <div fxFlex="30%" fxFlex.md="90%">
             <mat-card class="p-3 mt-5">
                 <mat-card-header>
-                    <div mat-card-avatar class="header-image"></div>
-                    <mat-card-title>Goud</mat-card-title>
+                    <div mat-card-avatar class="header-image-gold"></div>
+                    <mat-card-title><h1>Goud</h1></mat-card-title>
                 </mat-card-header>
-                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-                    alt="Photo of a Shiba Inu">
                 <mat-card-content class="text-start">
                     <ul>
                         <li>2 shooters</li>
                         <li>8 uur</li>
                         <li>minimaal 400 foto's</li>
                         <li>1500 EUR</li>
-                      </ul> 
+                    </ul>
+
+                    <mat-accordion>
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title class="h5">
+                                    Extra video opties:
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <ul class="h6">
+                                <li>250 EUR video gastenboek</li>
+                                <li>300 EUR full ceremonie</li>
+                                <li>250 EUR korte wedding film (max 2 min) experimentele fase</li>
+                            </ul>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
                 </mat-card-content>
             </mat-card>
         </div>
-        <div fxFlex="25%" fxFlex.sm="90%">
+        <div fxFlex="30%" fxFlex.md="90%">
             <mat-card class="p-3 mt-5">
                 <mat-card-header>
-                    <div mat-card-avatar class="header-image"></div>
-                    <mat-card-title>Diamant</mat-card-title>
+                    <div mat-card-avatar class="header-image-diamond"></div>
+                    <mat-card-title><h1>Diamant</h1></mat-card-title>
                 </mat-card-header>
-                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-                    alt="Photo of a Shiba Inu">
                 <mat-card-content class="text-start">
                     <ul>
                         <li>2 shooters</li>
                         <li>hele dag</li>
                         <li>minimaal 500 foto's</li>
                         <li>1800 EUR</li>
-                      </ul> 
+                    </ul>
+
+                    <mat-accordion>
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title class="h5">
+                                    Extra video opties:
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <ul class="h6">
+                                <li>250 EUR video gastenboek</li>
+                                <li>300 EUR full ceremonie</li>
+                                <li>250 EUR korte wedding film (max 2 min) experimentele fase</li>
+                            </ul>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
                 </mat-card-content>
             </mat-card>
         </div>

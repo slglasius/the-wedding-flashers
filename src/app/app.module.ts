@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from "@angular/material/icon";
 import { MatGridListModule } from '@angular/material/grid-list'; 
+import { MatExpansionModule}  from '@angular/material/expansion'; 
 
 import { MatButtonModule } from "@angular/material/button";
 import { MatSidenavModule } from "@angular/material/sidenav";
@@ -45,6 +46,7 @@ import { VideoComponent } from './secure/video/video.component';
     NgbModule,
     FlexLayoutModule,
     MatGridListModule,
+    MatExpansionModule,
     MatCardModule
   ],
   providers: [],

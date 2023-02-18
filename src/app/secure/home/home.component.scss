@@ -6,12 +6,12 @@ html {
   .main-heading {
     opacity: 1;
     position: absolute;
-    width: 50%;
+    width: 100%;
     font-size: 3rem;
     z-index: 100;
-    top: 2em;
-    left: 2em;
+    bottom: 3em;
     color: #FFFFFF;
+    text-align: center;
   }
   /* BG SLIDESHOW CSS */
   .slideshow,
